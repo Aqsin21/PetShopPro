@@ -17,9 +17,11 @@ namespace PetShop.Controllers
      public async Task<IActionResult> Index()
         {
             var sliders = await _dbContext.Sliders.ToListAsync();
+            var products = await _dbContext.Products.Take(6).ToListAsync(); 
             var model = new HomeViewModel
             {
-                Sliders = sliders
+                Sliders = sliders,
+                Products= products
             };
             return View(model);
         }

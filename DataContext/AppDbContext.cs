@@ -15,5 +15,9 @@ namespace PetShop.DataContext
         }
         public DbSet<Slider> Sliders { get; set; }
 
+        public DbSet<Product> Products { get; set; }
+
+       
+
     }
 }
