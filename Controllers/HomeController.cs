@@ -22,6 +22,7 @@ namespace PetShop.Controllers
             {
                 Sliders = sliders,
                 Products= products
+                
             };
             return View(model);
         }

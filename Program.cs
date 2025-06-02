@@ -16,6 +16,7 @@ namespace PetShop
                 option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
             });
 
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -38,6 +39,11 @@ namespace PetShop
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
             app.Run();
+
+
+
+
+
         }
     }
 }
